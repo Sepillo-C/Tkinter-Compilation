@@ -12,7 +12,7 @@ label = Label(window,
               image=photo,   #Puts the image in the label
               compound='bottom' #Image position
               )
-label.pack() #Makes the label to come in the GUI
-#label.place(x=50,y=50) #Makes the label to come in a designated position
+label.pack() #Displays the label
+#label.place(x=50,y=50) #Displays the label in an x and y postion
 
 window.mainloop()
