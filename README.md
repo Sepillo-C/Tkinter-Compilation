@@ -1,10 +1,11 @@
-📚 Tkinter Compilation 🎨
-A compilation of Tkinter projects and experiments created through my learning journey! 🚀
+# 📚 Tkinter Compilation 🎨  
 
-🖥️ What’s Inside
-Explore examples, tips, and mini-projects as I dive into the world of GUI development with Tkinter.
+A compilation of Tkinter projects and experiments created through my learning journey! 🚀  
 
-✏️ Simple widgets and layouts
-🛠️ Interactive applications
-🎨 Styling and theming
-📖 Notes and resources
+## 🖥️ What’s Inside  
+Explore examples, tips, and mini-projects as I dive into the world of GUI development with Tkinter.  
+
+- ✏️ Simple widgets and layouts  
+- 🛠️ Interactive applications  
+- 🎨 Styling and theming  
+- 📖 Notes and resources  
