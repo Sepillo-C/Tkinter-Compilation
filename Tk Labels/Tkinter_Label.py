@@ -2,7 +2,7 @@ from tkinter import *
 
 window = Tk()
                                                                                     #Name of image
-photo = PhotoImage(file='C:\\Users\\Administrator\\Desktop\\Tkinter\\Tk Labels\\photo\\earth.png') #File location of the image
+photo = PhotoImage(file='C:\\Users\\Administrator\\Desktop\\Tkinter-Compilation\\Tk Labels\\photo\\earth.png') #File location of the image
 
 label = Label(window,
               text="Hello World",   #Text that will appear
