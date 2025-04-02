@@ -1,33 +1,61 @@
 from tkinter import *
 
+
+#Function for addition
 def Add():
     a = int(_Val1.get())
     b = int(_Val2.get())
     
     _Total.config(text=f"Total: {a + b}")
 
+#Function for subtraction
 def Sub():
     a = int(_Val1.get())
     b = int(_Val2.get())
     
     _Total.config(text=f"Total: {a - b}")
 
+#Function for multiplication
 def Mult():
     a = int(_Val1.get())
     b = int(_Val2.get())
     
     _Total.config(text=f"Total: {a * b}")
 
+#Function for division
 def Div():
     a = int(_Val1.get())
     b = int(_Val2.get())
     
-    if a or b == 0:
-        _Total.config(text=f"Invalid Amount")
-    else:
-        _Total.config(text=f"Total: {a / b}")
+    if a == 0 or b == 0:
+        Invalid = Toplevel()
+        Invalid.title("Invalid Amount")
+        Invalid.geometry("250x100")
 
+        LabelInvalid = Label(Invalid,
+                             text="Invalid amount, please enter a proper amount",)
+
+        LabelInvalid.grid(row=0,
+                          column=0,
+                          columnspan=3,
+                          pady=2)
+
+        ButtonInvalid = Button(Invalid,
+                               text="Close",
+                               command=Invalid.destroy)
+        ButtonInvalid.grid(row=1,
+                           column=1,
+                           pady=2)
+    else:
+        result = a / b
+        _Total.config(text=f"Total: {result:.2f}")
+
+
+#Mainwindow
 window = Tk()
+
+window.title("Bootleg Calculator")
+window.geometry("275x110")
 
 _TVal1 = Label(window,
                text = "Value 1")
@@ -104,7 +132,6 @@ DivResize = DivisionLogo.subsample(2,2)
 _DivisionLogo = Button(window,
                        image=DivResize,
                        command=Div)
-                        
                         
 _DivisionLogo.grid(row=4,
                    column=4,
