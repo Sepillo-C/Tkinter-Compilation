@@ -1,6 +1,5 @@
 from tkinter import *
 
-
 #Function for addition
 def Add():
     a = int(_Val1.get())
@@ -92,8 +91,9 @@ _Total.grid(row=3,
             pady=2,
             padx=2)
 
+#Addition Button
 AdditionLogo = PhotoImage(file='C:\\Users\\Administrator\\Desktop\\Tkinter-Compilation\\Calculator Logo\\AdditionLogo.png')
-AddResize = AdditionLogo.subsample(2,2)
+AddResize = AdditionLogo.subsample(20,20)
 
 _AdditionButton = Button(window,
                          image=AddResize,
@@ -103,8 +103,9 @@ _AdditionButton.grid(row=4,
                      pady=2,
                      padx=2)
 
+#Subtraction Button
 SubtractionLogo = PhotoImage(file='C:\\Users\\Administrator\\Desktop\\Tkinter-Compilation\\Calculator Logo\\SubtractionLogo.png')
-SubResize = SubtractionLogo.subsample(2,2)
+SubResize = SubtractionLogo.subsample(20,20)
 
 _SubtractionButton = Button(window,
                             image=SubResize,
@@ -114,8 +115,9 @@ _SubtractionButton.grid(row=4,
                         pady=2,
                         padx=2)
 
+#Multiplication Button
 MultiplicationLogo = PhotoImage(file='C:\\Users\\Administrator\\Desktop\\Tkinter-Compilation\\Calculator Logo\\MultiplicationLogo.png')
-MultResize = MultiplicationLogo.subsample(2,2)
+MultResize = MultiplicationLogo.subsample(20,20)
 
 _MultiplicationButton = Button(window,
                                image=MultResize,
@@ -126,8 +128,9 @@ _MultiplicationButton.grid(row=4,
                            pady=2,
                            padx=2)
                                               
+#Division Button                                              
 DivisionLogo = PhotoImage(file='C:\\Users\\Administrator\\Desktop\\Tkinter-Compilation\\Calculator Logo\\DivisionLogo.png')
-DivResize = DivisionLogo.subsample(2,2)
+DivResize = DivisionLogo.subsample(20,20)
 
 _DivisionLogo = Button(window,
                        image=DivResize,
